@@ -1,0 +1,29 @@
+<!-- New Badge -->
+<span class="badge text-bg-success" style="width: 50px; height: auto;"> New </span>
+
+<!-- Emphasis badge -->
+<span class="badge text-bg-info text-white">  </span>
+
+<!-- Link -->
+<a href="" target="_blank" class="text-decoration-none"> <i class="fa-solid fa-computer-mouse fa-bounce"></i>  </a>
+
+<!-- Update -->
+<span class="badge text-bg-danger" style="width: 60px; height: auto;"> Update </span> <span class="text-danger">  </span>
+
+<!-- Item -->
+<img src=""><span class="badge rounded-pill text-bg-secondary text-white">  </span>
+
+<!-- Skill -->
+<a href="" target="_blank" class="text-decoration-none badge rounded-pill text-bg-dark">  </a>
+
+<!-- Multiple images in a table row -->
+<div class="row"><div class="col"><img src=""> X</div></div> <div class="row"><div class="col"><img src=""> Y</div></div>
+
+<!-- List with references -->
+<ul class="fa-ul mt-2">
+    <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-gear fa-spin fa-sm text-primary" style="--fa-animation-duration: 2s;"></i></span><a href="" target="_blank" class="text-decoration-none"></a> </li>
+    <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-gear fa-spin fa-sm text-primary" style="--fa-animation-duration: 2s;"></i></span><a href="" target="_blank" class="text-decoration-none"></a> </li>
+    <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-gear fa-spin fa-sm text-primary" style="--fa-animation-duration: 2s;"></i></span><a href="" target="_blank" class="text-decoration-none"></a> </li>
+    <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-gear fa-spin fa-sm text-primary" style="--fa-animation-duration: 2s;"></i></span><a href="" target="_blank" class="text-decoration-none"></a> </li>
+    <li class="mt-1"><span class="fa-li"><i class="fa-solid fa-gear fa-spin fa-sm text-primary" style="--fa-animation-duration: 2s;"></i></span><a href="" target="_blank" class="text-decoration-none"></a> </li>
+</ul>
