@@ -1,3 +1,6 @@
+$( document ).ready(function() {
+  console.log( "ready!" );
+
 // -----------------
 // Enabling popover
 // -----------------
@@ -80,4 +83,6 @@ jQuery('ul.tabs').each(function(){
       // Prevent the anchor's default click action
       e.preventDefault();
   });
+});
+
 });
