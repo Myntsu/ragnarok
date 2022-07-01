@@ -5,13 +5,13 @@
 <span class="badge text-bg-info text-white">  </span>
 
 <!-- Link -->
-<a href="" target="_blank" class="text-decoration-none"> <i class="fa-solid fa-computer-mouse fa-bounce"></i>  </a>
+<a href="" target="_blank" class="text-decoration-none"> <i class="fa-solid fa-computer-mouse"></i>  </a>
 
 <!-- Update -->
 <span class="badge text-bg-danger" style="width: 60px; height: auto;"> Update </span> <span class="text-danger">  </span>
 
 <!-- Item -->
-<img src=""><span class="badge rounded-pill text-bg-secondary text-white">  </span>
+<img src=""><span class="badge border border-0 rounded-1 text-bg-secondary text-white"> </span>
 
 <!-- Skill -->
 <a href="" target="_blank" class="text-decoration-none badge rounded-pill text-bg-dark">  </a>

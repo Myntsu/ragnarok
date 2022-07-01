@@ -12,23 +12,27 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-$( document ).ready(function() {
+// ------------------
+// Enabling dropdown
+// ------------------
 
-  // --------------
-  // Sticky top bar
-  // --------------
-  window.onscroll = function() {myFunction()};
+const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
+const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
 
-  var navbar = document.getElementById("navegation");
-  var sticky = navbar.offsetTop;
 
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
+$(document).ready(function() {
+
+      // Smooth Scroll
+    //   $("a").click(function(){
+    //     var gato = this.hash
+
+    //     $("html, body").animate(
+    //         {
+    //             scrollTop: $(gato).offset().top
+    //         },
+    //         1000 //Higher = slower
+    //     )
+    // })
 
   // ------------------
   // Accordion function
@@ -52,40 +56,40 @@ $( document ).ready(function() {
   // Different tabs switch
   // ----------------------
 
-  jQuery('ul.tabs').each(function(){
-    // For each set of tabs, we want to keep track of
-    // which tab is active and it's associated content
-    var $active, $content, $links = jQuery(this).find('a');
+  // jQuery('ul.tabs').each(function(){
+  //   // For each set of tabs, we want to keep track of
+  //   // which tab is active and it's associated content
+  //   var $active, $content, $links = jQuery(this).find('a');
 
-    // If the location.hash matches one of the links, use that as the active tab.
-    // If no match is found, use the first link as the initial active tab.
-    $active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
-    $active.addClass('active');
+  //   // If the location.hash matches one of the links, use that as the active tab.
+  //   // If no match is found, use the first link as the initial active tab.
+  //   $active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+  //   $active.addClass('active');
 
-    $content = $($active[0].hash);
+  //   $content = $($active[0].hash);
 
-    // Hide the remaining content
-    $links.not($active).each(function () {
-        jQuery(this.hash).hide();
-    });
+  //   // Hide the remaining content
+  //   $links.not($active).each(function () {
+  //       jQuery(this.hash).hide();
+  //   });
 
-    // Bind the click event handler
-    jQuery(this).on('click', 'a', function(e){
-        // Make the old tab inactive.
-        $active.removeClass('active');
-        $content.hide();
+  //   // Bind the click event handler
+  //   jQuery(this).on('click', 'a', function(e){
+  //       // Make the old tab inactive.
+  //       $active.removeClass('active');
+  //       $content.hide();
 
-        // Update the variables with the new link and content
-        $active = jQuery(this);
-        $content = jQuery(this.hash);
+  //       // Update the variables with the new link and content
+  //       $active = jQuery(this);
+  //       $content = jQuery(this.hash);
 
-        // Make the tab active.
-        $active.addClass('active');
-        $content.show();
+  //       // Make the tab active.
+  //       $active.addClass('active');
+  //       $content.show();
 
-        // Prevent the anchor's default click action
-        e.preventDefault();
-    });
-  });
+  //       // Prevent the anchor's default click action
+  //       e.preventDefault();
+  //   });
+  // });
 
 });
