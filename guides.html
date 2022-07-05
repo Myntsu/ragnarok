@@ -34,277 +34,287 @@
     <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
 </head>
-<body>
-    <!-- Main -->
-    <main>
-        <!-- Navigation bar -->
-        <nav id="" class="navbar navbar-expand-lg bg-dark text-white mont-alt-300-14 px-3 py-2 sticky-top border-bottom border-white">
-            <div class="container-fluid mx-5">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo/memberLoginLogo.webp" alt="NovaRO Logo" style="width: 64px; height: 64px;"></a>
-            <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- List -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs text-center">
-                    <li class="nav-item mx-5 mx-lg-2 my-2 mx-lg-0">
-                    <a href="index.html" class="nav-link text-white btn">
-                        <i class="fa-solid fa-house"></i> <span> Home</span>
-                    </a>
-                    </li>
-                    <li class="nav-item mx-5 mx-lg-2 my-2 mx-lg-0">
-                    <a href="guides.html" class="nav-link text-white btn">
-                        <i class="fa-solid fa-book"></i> <span> Guides</span>
-                    </a>
-                    </li>
-                </ul>
-                <div class="col-12 col-sm-1 text-center d-none d-lg-flex justify-content-end">
-                    <button type="button" class="btn btn-dark justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <img src="assets/img/icons/3671842_question_icon.png" class=" mx-auto mb-1" width="16" height="16">
-                    </button>
-                </div>
-            </div>
-            </div>
-        </nav>
-        <!-- /// End of Navigation bar -->
-        
-    <!-- Tab guides list -->
-    <div id="tab-guides" class="container mt-4 position-relative"> <!--ID Guides tab-->
-        <ul class="nav col-12 justify-content-start mont-alt-300 tab me-auto text-center tabs py-3 gradient-border bg-dark">
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <button id="rune-knight-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#author-rune-knight" type="button" role="tab" aria-controls="author-rune-knight" aria-selected="true"> <!--Rune Knight-->
-              <i class="fa-solid fa-dragon"></i><span style="width: 300px;"> Rune Knight</span>
-            </button>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <button id="royal-guard-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#royal-guard" type="button" role="tab" aria-controls="royal-guard" aria-selected="true"> <!--Royal Guard-->
-              <i class="fa-solid fa-shield"></i><span> Royal Guard</span>
-            </button>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#warlock" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Warlock-->
-              <i class="fa-solid fa-fire"></i><span> Warlock</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#sorcerer" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sorcerer-->
-              <i class="fa-solid fa-book-bookmark"></i></i><span> Sorcerer</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#ranger" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Ranger-->
-              <i class="fa-solid fa-feather-pointed"></i><span> Ranger</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#mins-&-wandy" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Minstrel & Wanderer-->
-              <i class="fa-solid fa-music"></i><span> Minstrel & Wanderer</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#mechanic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Mechanic-->
-              <i class="fa-solid fa-wrench"></i><span> Mechanic</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#genetic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Genetic-->
-              <i class="fa-solid fa-flask-vial"></i></i><span> Genetic</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#guillotine-cross" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Guillotine Cross-->
-              <i class="fa-solid fa-skull-crossbones"></i><span> Guillotine Cross</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#shadow-chaser" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Shadow Chaser-->
-              <i class="fa-solid fa-copy"></i></i><span> Shadow Chaser</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#arch-bishop" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Arch Bishop-->
-              <i class="fa-solid fa-book-bible"></i><span> Arch Bishop</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#sura" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sura-->
-              <i class="fa-solid fa-hand-fist"></i></i><span> Sura</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#kagerou-&-oboro" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Kagerou & Oboro-->
-              <i class="fa-solid fa-fan"></i><span> Kagerou & Oboro</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#rebellion" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Rebellion-->
-              <i class="fa-solid fa-gun"></i><span> Rebellion</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#summoner" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Summoner-->
-              <i class="fa-solid fa-paw"></i><span> Summoner</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#super-novice" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Super Novice-->
-              <i class="fa-solid fa-helmet-safety"></i><span> Super Novice</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#soul-reaper" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Soul Reaper-->
-              <i class="fa-solid fa-book-quran"></i><span> Soul Reaper</span>
-            </a>
-          </li>
-          <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-            <a href="#star-emperor" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Star Emperor-->
-              <i class="fa-solid fa-moon"></i><span> Star Emperor</span>
-            </a>
-          </li>
-        </ul>
-    </div>
-    <!-- /// Tab guides list -->
+<body class="position-relative">
 
-    <div id="author-rune-knight" class="container my-5 tab-pane fade" role="tabpanel" aria-labelledby="rune-knight-tab" tabindex="0">
-        <div class="d-flex flex-wrap justify-content-center">
-            <div>
-                <!-- Leinarth card -->
-                <div class="card mb-3 mont-300-14 bg-dark col-12 rounded-bottom" style="max-width: 540px;">
-                  <div class="row g-0 position-relative">
-                    <div class="col-md-4">
-                      <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="img-fluid rounded-bottom"> <!-- Image -->
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body row text-white">
-                          <div class="d-flex justify-content-start align-items-baseline">
-                              <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
-                              <div class="d-flex justify-content-start align-items-center ms-2">
-                                <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                              </div>
-                              <div class="d-flex ms-auto me-2">
-                                <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                  Launch
-                                </a>
-                              </div>
-                          </div>
-                        <hr class="ms-3 w-50 my-md-2">
-                        <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
-                        <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
-                          <div class="d-flex btn-group ms-2 position-relative dropdown">
-                          <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
-                          </button>
-                          <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                          </button>
-                              <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
-                              <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              </ul>
-                          </div>
-                        </span>
-                        <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border" style="width: 70px; top: 102px; left: 444px;">
-                          Launch
-                        </a>
-                        
-                        <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                          <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+  <!-- Navigation bar -->
+  <nav id="navegation" class="navbar navbar-expand-lg text-white mont-alt-300-14 px-3 py-2 sticky-top border-bottom border-white border-2">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="#"><img src="assets/img/logo/memberLoginLogo.webp" alt="NovaRO Logo" style="width: 48px; height: 48px;"></a>
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- List -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 tabs text-center">
+            <li class="nav-item mx-5 mx-lg-2 my-2 mx-lg-0">
+              <a href="index.html" class="nav-link text-white btn">
+                <i class="fa-solid fa-house"></i> <span> Home</span>
+              </a>
+            </li>
+            <li class="nav-item mx-5 mx-lg-2 my-2 mx-lg-0">
+              <a href="guides.html" class="nav-link text-white btn">
+                <i class="fa-solid fa-book"></i> <span> Guides</span>
+              </a>
+            </li>
+          </ul>
+          <div class="col-12 col-sm-1 text-center d-none d-lg-flex justify-content-end">
+            <button type="button" class="btn justify-content-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <img src="assets/img/icons/3671842_question_icon.png" class=" mx-auto mb-1" width="16" height="16">
+            </button>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <!-- /// End of Navigation bar -->
+
+  <!-- Main -->
+  <main data-router-wrapper>
+  <section data-router-view="guides" class="home-content">
+  <!-- Tab guides list -->
+  <div id="tab-guides" class="container mt-4 position-relative"> <!--ID Guides tab-->
+      <ul class="nav col-12 justify-content-start mont-alt-300 tab me-auto text-center tabs py-3 border border-white rounded-1 border-3 bg-dark">
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <button id="rune-knight-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#author-rune-knight" type="button" role="tab" aria-controls="author-rune-knight" aria-selected="true"> <!--Rune Knight-->
+            <i class="fa-solid fa-dragon"></i><span style="width: 300px;"> Rune Knight</span>
+          </button>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <button id="royal-guard-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#royal-guard" type="button" role="tab" aria-controls="royal-guard" aria-selected="true"> <!--Royal Guard-->
+            <i class="fa-solid fa-shield"></i><span> Royal Guard</span>
+          </button>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#warlock" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Warlock-->
+            <i class="fa-solid fa-fire"></i><span> Warlock</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#sorcerer" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sorcerer-->
+            <i class="fa-solid fa-book-bookmark"></i></i><span> Sorcerer</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#ranger" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Ranger-->
+            <i class="fa-solid fa-feather-pointed"></i><span> Ranger</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#mins-&-wandy" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Minstrel & Wanderer-->
+            <i class="fa-solid fa-music"></i><span> Minstrel & Wanderer</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#mechanic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Mechanic-->
+            <i class="fa-solid fa-wrench"></i><span> Mechanic</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#genetic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Genetic-->
+            <i class="fa-solid fa-flask-vial"></i></i><span> Genetic</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#guillotine-cross" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Guillotine Cross-->
+            <i class="fa-solid fa-skull-crossbones"></i><span> Guillotine Cross</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#shadow-chaser" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Shadow Chaser-->
+            <i class="fa-solid fa-copy"></i></i><span> Shadow Chaser</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#arch-bishop" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Arch Bishop-->
+            <i class="fa-solid fa-book-bible"></i><span> Arch Bishop</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#sura" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sura-->
+            <i class="fa-solid fa-hand-fist"></i></i><span> Sura</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#kagerou-&-oboro" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Kagerou & Oboro-->
+            <i class="fa-solid fa-fan"></i><span> Kagerou & Oboro</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#rebellion" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Rebellion-->
+            <i class="fa-solid fa-gun"></i><span> Rebellion</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#summoner" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Summoner-->
+            <i class="fa-solid fa-paw"></i><span> Summoner</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#super-novice" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Super Novice-->
+            <i class="fa-solid fa-helmet-safety"></i><span> Super Novice</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#soul-reaper" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Soul Reaper-->
+            <i class="fa-solid fa-book-quran"></i><span> Soul Reaper</span>
+          </a>
+        </li>
+        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <a href="#star-emperor" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Star Emperor-->
+            <i class="fa-solid fa-moon"></i><span> Star Emperor</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <!-- ///End of Tab guides list -->
+
+  <!-- Authors list -->
+  <div id="author-rune-knight" class="container my-5 tab-pane fade" role="tabpanel" aria-labelledby="rune-knight-tab" tabindex="0" >
+      <div class="d-flex flex-wrap justify-content-center">
+          <div>
+              <!-- Leinarth card -->
+              <div class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                <div class="row g-0 position-relative">
+                  <div class="col-md-4">
+                    <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="img-fluid rounded-bottom"> <!-- Image -->
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body row text-white">
+                        <div class="d-flex justify-content-start align-items-baseline">
+                            <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
+                            <div class="d-flex justify-content-start align-items-center ms-2">
+                              <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                            </div>
+                            <div class="d-flex ms-auto me-2">
+                              <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                Launch
+                              </a>
+                            </div>
                         </div>
+                      <hr class="ms-3 w-50 my-md-2">
+                      <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
+                      <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
+                        <div class="d-flex btn-group ms-2 position-relative dropdown">
+                        <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
+                        </button>
+                        <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
+                            <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            </ul>
+                        </div>
+                      </span>
+                      <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                        Launch
+                      </a>
+                      
+                      <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                        <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <!-- Myndi card -->
-                <div class="card mb-3 mont-300-14 bg-dark col-12 rounded-bottom" style="max-width: 540px;">
-                  <div class="row g-0 position-relative">
-                    <div class="col-md-4">
-                      <img src="assets/img/illustration/myndi__smytsu_profile.png" class="img-fluid rounded-bottom"> <!-- Image -->
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body row text-white">
-                          <div class="d-flex justify-content-start align-items-baseline">
-                              <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
-                              <div class="d-flex justify-content-start align-items-center ms-2">
-                                <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                              </div>
-                              <div class="d-flex ms-auto me-2">
-                                <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                  Launch
-                                </a>
-                              </div>
-                          </div>
-                        <hr class="ms-3 w-50 my-md-2">
-                        <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> Not updated yet</span>
-                        <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
-                          <div class="d-flex btn-group ms-2 position-relative dropdown">
-                          <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
-                          </button>
-                          <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                          </button>
-                              <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
-                              <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              </ul>
-                          </div>
-                        </span>
-                        <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold" style="width: 70px; top: 102px; left: 444px;">
-                          Launch
-                        </a>
-                        
-                        <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                          <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+              <!-- Myndi card -->
+              <div class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                <div class="row g-0 position-relative">
+                  <div class="col-md-4">
+                    <img src="assets/img/illustration/myndi__smytsu_profile.png" class="img-fluid rounded-bottom"> <!-- Image -->
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body row text-white">
+                        <div class="d-flex justify-content-start align-items-baseline">
+                            <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
+                            <div class="d-flex justify-content-start align-items-center ms-2">
+                              <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                            </div>
+                            <div class="d-flex ms-auto me-2">
+                              <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                Launch
+                              </a>
+                            </div>
                         </div>
+                      <hr class="ms-3 w-50 my-md-2">
+                      <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> Not updated yet</span>
+                      <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
+                        <div class="d-flex btn-group ms-2 position-relative dropdown">
+                        <button id="drop-myndi" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
+                        </button>
+                        <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="drop-myndi"> <!-- Content WIP fw-bold // primary for check -->
+                            <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            </ul>
+                        </div>
+                      </span>
+                      <a href="/" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                        Launch
+                      </a>
+                      
+                      <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                        <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
                       </div>
                     </div>
                   </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+  </main>
     
-    <!-- Modal -->
-    <div class="modal fade roboto-300" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-primary" id="exampleModalLabel">About the creator</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <p>This webpage is made by <span><i class="fa-brands fa-discord discord-logo fa-bounce"></i></span> <span class="roboto-500"><a id="Myndi" href="https://discordapp.com/users/124421052569878528/" target="_blank" style="text-decoration: none;">Myndi#5041</a></span>.</p>
-                <p>All you see here is done with their own experience, and by doing some extra research, additionally to <span class="text-primary roboto-500">Bootstrap and jQuery</span>.</p>
-                <p>If you want to learn more about it, how to make your own webpages or much more, please contact them.</p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Modal -->
+  <div class="modal fade roboto-300" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title text-primary" id="exampleModalLabel">About the creator</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <p>This webpage is made by <span><i class="fa-brands fa-discord discord-logo fa-bounce"></i></span> <span class="roboto-500"><a id="Myndi" href="https://discordapp.com/users/124421052569878528/" target="_blank" style="text-decoration: none;">Myndi#5041</a></span>.</p>
+              <p>All you see here is done with their own experience, and by doing some extra research, additionally to <span class="text-primary roboto-500">Bootstrap and jQuery</span>.</p>
+              <p>If you want to learn more about it, how to make your own webpages or much more, please contact them.</p>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
-    <!-- Bootstrap -->
+  <!-- Back to top arrow -->
+  <button type="button"  id="btn-back-to-top" class="btn btn-dark border rounded-circle">
+    <i class="fa-solid fa-angles-up"></i>
+  </button>
+
+  <!-- Bootstrap -->
     <!-- Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <!-- jQuery -->
+  <script defer src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
 
-    <!-- JS -->
-    <script src="assets/js/script.js"></script>
+  <!-- JS -->
+  <script defer src="assets/js/script.js"></script>
 </body>
 </html> 

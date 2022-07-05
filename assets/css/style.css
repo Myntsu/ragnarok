@@ -9,41 +9,27 @@
 }
 /* Set height of body and the document to 100% */
  body, html {
-     height: 100%;
-     margin: 0;
+  height: 100%;
+  margin: 0;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%); */
+  /* background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-/* Sticy bar index priority */
- #navegation {
-  z-index: 1000;
- }
+  .navbar {
+    background-color: #202429e9 !important;
+  }
 
  /* Navigation bar */
-  header ul a:hover {
+  nav ul a:hover {
     color: #202429 !important;
     background-color: white !important;
- }
+  }
 
- header ul a:active {
+  nav ul a:active {
   box-shadow: 0px 0px 1px 3px rgba(255, 255, 255, 0.25) !important;
- }
-
- .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1000px !important;
-  }
-
-  #list-home-list:focus{
-    background-color: red !important;
-    border-color: red !important;
-  }
-
-  #list-home-list:active{
-    background-color: red !important;
-    border-color: red !important;
   }
 
   .skill-over:hover {
@@ -68,10 +54,15 @@
     border-color: white !important;
   }
 
-  .caret {
-    --bs-caret-width: 2em;
+  .bg-softblue {
+    background-color: #A5C2FA !important;
   }
-  
+
+  .bg-softpink {
+    background-color: #FAD0D1 !important;
+  }
+
+
   /* -------------------- */
   /* |   Nav tab/link   | */
   /* -------------------- */
@@ -200,7 +191,7 @@
   /* --------------- */
 
   .discord-color {
-    color: #5865F2 !important;
+    color: #747fef !important;
   }
 
   .discord-logo {
@@ -208,10 +199,41 @@
   }
 
   #Myndi:hover {
-    color: #ea4335 !important;
+    color: white !important;
     text-decoration: underline !important;
-    text-decoration-color: #ea4335 !important;
+    text-decoration-color: white !important;
   }
+
+  .gradient-bg {
+    --border-width: 3px;
+    position: relative;
+    width: auto;
+    height: auto;
+    background: white;
+    border-radius: var(--border-width);
+  }
+  .gradient-bg::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(90deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0% 50%;
+    border-radius: 5px;
+    animation: bgGradient 3s both infinite;
+  }
+
+  @keyframes bgGradient {
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
 
   /* --------------- */
   /* |   Buttons   | */
@@ -249,6 +271,65 @@
     box-shadow: 0px 0px 1px 4px white !important;
   }
 
+  /* Back to top button */
+  #btn-back-to-top {
+    position: fixed;
+    text-align: center;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    width: 48px;
+    height: 48px;
+    opacity: 0.7 !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  #btn-back-to-top:hover {
+    color: white !important;
+    opacity: 1 !important;
+    box-shadow: 0px 0px 1px 2px #202429;
+    border-color: transparent !important;  
+  }
+
+  #btn-back-to-top:focus {
+    animation: pulsate .6s ease-in infinite alternate !important;
+  }
+
+  @keyframes pulsate {
+    from {
+      box-shadow: 0px 0px 1px 1px #20242938;
+    }
+    to {
+      box-shadow: 0px 0px 1px 15px #20242938;
+    }
+  }
+
+  #btn-back-to-top i {
+    margin: 0;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  #btn-back-to-top:hover i {
+    animation: spinArrow 1s infinite !important;
+    display: inline-block;
+  }
+
+  @keyframes spinArrow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+
+  .use-links {
+    
+  }
+
   /* --------------------- */
   /* |   Box animation   | */
   /* --------------------- */
@@ -274,7 +355,7 @@
     background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
     background-size: 300% 300%;
     background-position: 0 50%;
-    border-radius: calc(2 * var(--border-width));
+    border-radius: 5px;
     animation: moveGradient 4s alternate infinite;
   }
 
@@ -357,7 +438,7 @@
   background-image: linear-gradient(90deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
   background-size: 300% 300%;
   background-position: 0 50%;
-  border-radius: calc(2 * var(--border-width));
+  border-radius: 5px;
   animation: moveGradient 3s ease-in-out 0.1s infinite;
   color: white !important;
 }
@@ -370,7 +451,7 @@
   background-image: linear-gradient(90deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
   background-size: 300% 300%;
   background-position: 0 50%;
-  border-radius: calc(2 * var(--border-width));
+  border-radius: 5px;
   animation: moveGradient 3s ease-in-out 0.1s infinite;
   color: white !important;
 }
@@ -383,7 +464,7 @@
   background-image: linear-gradient(90deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
   background-size: 300% 300%;
   background-position: 0 50%;
-  border-radius: calc(2 * var(--border-width));
+  border-radius: 5px;
   animation: moveGradient 3s ease-in-out 0.1s infinite;
   color: white !important;
 }
@@ -393,4 +474,12 @@
   50% {
     background-position: 100% 50%;
   }
+}
+
+.simple-hover-txt:hover {
+  opacity: 0.6 !important;
+}
+
+.simple-hover:hover {
+  opacity: 0.92 !important;
 }

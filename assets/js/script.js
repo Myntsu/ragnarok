@@ -12,31 +12,43 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-// ------------------
-// Enabling dropdown
-// ------------------
-
-const dropdownElementList = document.querySelectorAll('.dropdown-toggle')
-const dropdownList = [...dropdownElementList].map(dropdownToggleEl => new bootstrap.Dropdown(dropdownToggleEl))
-
-
+// ===== Document ready =====
 $(document).ready(function() {
 
-      // Smooth Scroll
-    //   $("a").click(function(){
-    //     var gato = this.hash
+  // ===== Scroll to Top =====
+  
+  const backToTopButton = document.querySelector("#btn-back-to-top");
 
-    //     $("html, body").animate(
-    //         {
-    //             scrollTop: $(gato).offset().top
-    //         },
-    //         1000 //Higher = slower
-    //     )
-    // })
+  const scrollContainer = () => {
+    return document.documentElement || document.body;
+  };
 
-  // ------------------
-  // Accordion function
-  // ------------------
+  const goToTop = () => {
+    document.body.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
+  backToTopButton.addEventListener("click", goToTop);
+
+  //Get the button
+  mybutton = document.getElementById("btn-back-to-top");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  // Display and hide
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // ===== Accordion function =====
+
+  // 💬 CURRENTLY NOT IN USE------------------
   var acc = document.getElementsByClassName("accor");
   var i;
 
@@ -52,44 +64,44 @@ $(document).ready(function() {
     });
   }
 
-  // ----------------------
-  // Different tabs switch
-  // ----------------------
 
-  // jQuery('ul.tabs').each(function(){
-  //   // For each set of tabs, we want to keep track of
-  //   // which tab is active and it's associated content
-  //   var $active, $content, $links = jQuery(this).find('a');
+  // ===== Nav tab switch =====
 
-  //   // If the location.hash matches one of the links, use that as the active tab.
-  //   // If no match is found, use the first link as the initial active tab.
-  //   $active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
-  //   $active.addClass('active');
+  // 💬 CURRENTLY NOT IN USE------------------
+  jQuer('-').each(function(){ // ul, tabs
+    // For each set of tabs, we want to keep track of
+    // which tab is active and it's associated content
+    var $active, $content, $links = jQuery(this).find('a');
 
-  //   $content = $($active[0].hash);
+    // If the location.hash matches one of the links, use that as the active tab.
+    // If no match is found, use the first link as the initial active tab.
+    $active = jQuery($links.filter('[href="'+location.hash+'"]')[0] || $links[0]);
+    $active.addClass('active');
 
-  //   // Hide the remaining content
-  //   $links.not($active).each(function () {
-  //       jQuery(this.hash).hide();
-  //   });
+    $content = $($active[0].hash);
 
-  //   // Bind the click event handler
-  //   jQuery(this).on('click', 'a', function(e){
-  //       // Make the old tab inactive.
-  //       $active.removeClass('active');
-  //       $content.hide();
+    // Hide the remaining content
+    $links.not($active).each(function () {
+        jQuery(this.hash).hide();
+    });
 
-  //       // Update the variables with the new link and content
-  //       $active = jQuery(this);
-  //       $content = jQuery(this.hash);
+    // Bind the click event handler
+    jQuery(this).on('-', '-', function(e){ // click, a
+        // Make the old tab inactive.
+        $active.removeClass('active');
+        $content.hide();
 
-  //       // Make the tab active.
-  //       $active.addClass('active');
-  //       $content.show();
+        // Update the variables with the new link and content
+        $active = jQuery(this);
+        $content = jQuery(this.hash);
 
-  //       // Prevent the anchor's default click action
-  //       e.preventDefault();
-  //   });
-  // });
+        // Make the tab active.
+        $active.addClass('active');
+        $content.show();
+
+        // Prevent the anchor's default click action
+        e.preventDefault();
+    });
+  });
 
 });
