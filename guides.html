@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
 </head>
-<body class="position-relative">
+<body data-bs-spy="scroll" class="position-relative">
 
   <!-- Navigation bar -->
   <nav id="navegation" class="navbar navbar-expand-lg text-white mont-alt-300-14 px-3 py-2 sticky-top border-bottom border-white border-2">
@@ -74,9 +74,9 @@
   <div id="tab-guides" class="container mt-4 position-relative"> <!--ID Guides tab-->
       <ul class="nav col-12 justify-content-start mont-alt-300 tab me-auto text-center tabs py-3 border border-white rounded-1 border-3 bg-dark">
         <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <button id="rune-knight-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#author-rune-knight" type="button" role="tab" aria-controls="author-rune-knight" aria-selected="true"> <!--Rune Knight-->
-            <i class="fa-solid fa-dragon"></i><span style="width: 300px;"> Rune Knight</span>
-          </button>
+          <a href="#leinarth-card" id="" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-target="#author-rune-knight" type="button" role="tab" aria-controls="author-rune-knight" aria-selected="true" data-bs-toggle="tab"> <!--Rune Knight-->
+            <i class="fa-solid fa-dragon"></i><span> Rune Knight</span>
+          </a>
         </li>
         <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
           <button id="royal-guard-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#royal-guard" type="button" role="tab" aria-controls="royal-guard" aria-selected="true"> <!--Royal Guard-->
@@ -84,6 +84,7 @@
           </button>
         </li>
         <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
+          <img src="assets/img/chibis/wl_chibi.png" alt="">
           <a href="#warlock" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Warlock-->
             <i class="fa-solid fa-fire"></i><span> Warlock</span>
           </a>
@@ -168,13 +169,13 @@
   <!-- ///End of Tab guides list -->
 
   <!-- Authors list -->
-  <div id="author-rune-knight" class="container my-5 tab-pane fade" role="tabpanel" aria-labelledby="rune-knight-tab" tabindex="0" >
+  <div id="author-rune-knight" class="container my-5 tab-pane fade" role="tabpanel" data-bs-target="#tab-guides" data-bs-offset="0" tabindex="0" aria-labelledby="rune-knight-tab">
       <div class="d-flex flex-wrap justify-content-evenly">
               <!-- Leinarth card -->
-              <div class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+              <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
                 <div class="row g-0 position-relative">
                   <div class="col-md-4">
-                    <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="img-fluid rounded-bottom"> <!-- Image -->
+                    <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
                   </div>
                   <div class="col-md-8">
                     <div class="card-body row text-white">
@@ -228,7 +229,7 @@
               <div class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
                 <div class="row g-0 position-relative">
                   <div class="col-md-4">
-                    <img src="assets/img/illustration/myndi__smytsu_profile.png" class="img-fluid rounded-bottom"> <!-- Image -->
+                    <img src="assets/img/illustration/myndi__smytsu_profile.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
                   </div>
                   <div class="col-md-8">
                     <div class="card-body row text-white">
