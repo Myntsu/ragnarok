@@ -39,7 +39,7 @@
   <!-- Navigation bar -->
   <nav id="navegation" class="navbar navbar-expand-lg text-white mont-alt-300-14 px-3 py-2 sticky-top border-bottom border-white border-2">
     <div class="container-fluid mx-5">
-      <a class="navbar-brand" href="#"><img src="assets/img/logo/memberLoginLogo.webp" alt="NovaRO Logo" style="width: 48px; height: 48px;"></a>
+      <a class="navbar-brand" href="https://www.novaragnarok.com/?module=main" target="_blank"><img src="assets/img/logo/memberLoginLogo.webp" alt="NovaRO Logo" style="width: 48px; height: 48px;"></a>
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -69,6 +69,22 @@
 
   <!-- Main -->
   <main>
+
+    <header class="container my-3 d-none">
+        <div class="row">
+        <div class="col-12 col-lg-5 mb-lg-0">
+            a
+            <div class="d-flex flex-wrap">
+                <div class="col-1 bg-white border-white border-top border-start border-bottom rounded-start">
+                </div>
+                <div class="col-11 bg-dark border border-white rounded-end text-white p-3">
+                    a
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
     <section class="container my-5 bg-white shadow border rounded text-dark">
 
       <!-- Row -->
@@ -76,7 +92,7 @@
 
           <!-- RK -->
           <div class="col-12 col-lg-6">
-              <div class="d-flex description-hover">
+              <div class="d-flex description-hover justify-content-center justify-content-md-start position-relative">
                   
                   <!-- Image + Difficulty -->
                   <div class="w-40 p-2">
@@ -90,14 +106,14 @@
                           <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
                       </div>
                       <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
-                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link stretched-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
                               Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
                           </a>
                       </div>
                   </div>
 
                   <!-- Class + Description -->
-                  <div class="w-60 p-2">
+                  <div class="w-60 p-2 d-none d-md-block">
                       <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-rk-rg">
                           <i class="fa-solid fa-dragon me-2"></i> Rune Knight
                       </div>
@@ -110,122 +126,10 @@
                   </div>
               </div>
           </div>
-
-          <!-- Authors RK -->
-          <section class="guides-active collapsing" id="author-rk">
-              <div class="d-flex ps-3">
-                  <h1 class="mont-300-14 fs-3">Rune Knight</h1>
-              </div>
-              <div class="d-flex flex-wrap justify-content-evenly" >
-                  <!-- Leinarth card -->
-                  <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
-                      <div class="row g-0 position-relative">
-                          <div class="col-md-4">
-                          <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
-                          </div>
-                          <div class="col-md-8">
-                          <div class="card-body row text-white">
-                              <div class="d-flex justify-content-start align-items-baseline">
-                                  <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
-                                  <div class="d-flex justify-content-start align-items-center ms-2">
-                                      <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                                  </div>
-                                  <div class="d-flex ms-auto me-2">
-                                      <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                      Launch
-                                      </a>
-                                  </div>
-                              </div>
-                              <hr class="ms-3 w-50 my-md-2">
-                              <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
-                              <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge border rounded text-start">Work in progress</span> 
-                              <div class="d-flex btn-group ms-2 position-relative dropdown">
-                              <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
-                              </button>
-                              <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                              </button>
-                                  <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
-                                  <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                                  </ul>
-                              </div>
-                              </span>
-                              <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
-                              Guide
-                              </a>
-                              
-                              <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                              <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                              <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                              <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                  </div>
-              
-                  <!-- Myndi card -->
-                  <div id="myndi-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
-                  <div class="row g-0 position-relative">
-                      <div class="col-md-4">
-                      <img src="assets/img/illustration/myndi__smytsu_profile.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
-                      </div>
-                      <div class="col-md-8">
-                      <div class="card-body row text-white">
-                          <div class="d-flex justify-content-start align-items-baseline">
-                              <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
-                              <div class="d-flex justify-content-start align-items-center ms-2">
-                                  <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                              </div>
-                              <div class="d-flex ms-auto me-2">
-                                  <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                  Launch
-                                  </a>
-                              </div>
-                          </div>
-                          <hr class="ms-3 w-50 my-md-2">
-                          <span class="d-inline fw-light my-1 small"><span class="badge border rounded me-1 bg-primary">Last update</span> Not updated yet</span>
-                          <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge bg-dark border rounded text-start">Work in progress</span> 
-                          <div class="d-flex btn-group ms-2 position-relative dropdown">
-                          <button id="drop-myndi" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                              <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
-                          </button>
-                          <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                          </button>
-                              <ul class="dropdown-menu" aria-labelledby="drop-myndi"> <!-- Content WIP fw-bold // primary for check -->
-                              <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                              </ul>
-                          </div>
-                          </span>
-                          <a href="/" role="button" class="disabled d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
-                          Guide
-                          </a>
-                          
-                          <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                          <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-                  </div>
-              </div>
-          </section>
           
           <!-- RG -->
           <div class="col-12 col-lg-6">
-              <div class="d-flex description-hover">
+              <div class="d-flex description-hover justify-content-center justify-content-md-start position-relative">
 
                   <!-- Class + Description -->
                   <div class="w-60 p-2">
@@ -252,13 +156,187 @@
                           <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
                       </div>
                       <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
-                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link stretched-link" data-bs-toggle="collapse" href="#author-rg" role="button" aria-expanded="false" aria-controls="author-rg">
                               <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
                           </a>
                       </div>
                   </div>
               </div>
           </div>
+
+        <!-- Authors RK -->
+        <section class="guides-active collapse mt-2 mb-5" id="author-rk">
+            <div class="d-flex ps-3">
+                <h1 class="mont-300-14 fs-3">Rune Knight</h1>
+            </div>
+            <div class="d-flex flex-wrap justify-content-evenly" >
+                <!-- Leinarth card -->
+                <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                    <div class="row g-0 position-relative">
+                        <div class="col-md-4">
+                        <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body row text-white">
+                            <div class="d-flex justify-content-start align-items-baseline">
+                                <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
+                                <div class="d-flex justify-content-start align-items-center ms-2">
+                                    <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                                </div>
+                                <div class="d-flex ms-auto me-2">
+                                    <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                    Launch
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="ms-3 w-50 my-md-2">
+                            <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
+                            <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge border rounded text-start">Work in progress</span> 
+                            <div class="d-flex btn-group ms-2 position-relative dropdown">
+                            <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
+                            </button>
+                            <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
+                                <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                </ul>
+                            </div>
+                            </span>
+                            <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                            Guide
+                            </a>
+                            
+                            <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                            <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                            <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                            <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Myndi card -->
+                <div id="myndi-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                <div class="row g-0 position-relative">
+                    <div class="col-md-4">
+                    <img src="assets/img/illustration/myndi__smytsu_profile.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body row text-white">
+                        <div class="d-flex justify-content-start align-items-baseline">
+                            <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
+                            <div class="d-flex justify-content-start align-items-center ms-2">
+                                <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                            </div>
+                            <div class="d-flex ms-auto me-2">
+                                <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                Launch
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="ms-3 w-50 my-md-2">
+                        <span class="d-inline fw-light my-1 small"><span class="badge border rounded me-1 bg-primary">Last update</span> Not updated yet</span>
+                        <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge bg-dark border rounded text-start">Work in progress</span> 
+                        <div class="d-flex btn-group ms-2 position-relative dropdown">
+                        <button id="drop-myndi" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
+                        </button>
+                        <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                        </button>
+                            <ul class="dropdown-menu" aria-labelledby="drop-myndi"> <!-- Content WIP fw-bold // primary for check -->
+                            <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                            </ul>
+                        </div>
+                        </span>
+                        <a href="/" role="button" class="disabled d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                        Guide
+                        </a>
+                        
+                        <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                        <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guides-active collapse mt-2 mb-5" id="author-rg">
+            <div class="d-flex ps-3">
+                <h1 class="mont-300-14 fs-3">Royal Guard</h1>
+            </div>
+            <div class="d-flex flex-wrap justify-content-evenly" >
+                <!-- Leinarth card -->
+                <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                    <div class="row g-0 position-relative">
+                        <div class="col-md-4">
+                        <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body row text-white">
+                            <div class="d-flex justify-content-start align-items-baseline">
+                                <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
+                                <div class="d-flex justify-content-start align-items-center ms-2">
+                                    <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                                </div>
+                                <div class="d-flex ms-auto me-2">
+                                    <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                    Launch
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="ms-3 w-50 my-md-2">
+                            <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
+                            <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge border rounded text-start">Work in progress</span> 
+                            <div class="d-flex btn-group ms-2 position-relative dropdown">
+                            <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
+                            </button>
+                            <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                            </button>
+                                <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
+                                <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                </ul>
+                            </div>
+                            </span>
+                            <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                            Guide
+                            </a>
+                            
+                            <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                            <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                            <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                            <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
           <!-- WL -->
           <div class="col-12 col-lg-6">

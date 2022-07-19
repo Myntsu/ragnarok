@@ -80,13 +80,11 @@
   }
 
 .img-classes {
-    position: relative;
-
     border: 2px solid white;
     border-radius: 50%;
 
-    width: 80%;
-    height: 80%;
+
+
 
     aspect-ratio: 1;
 
@@ -127,6 +125,11 @@
 .description-hover:hover {
     background-color: rgba(128, 128, 128, 0.2);
     border-radius: 1em;
+}
+
+.description-hover:focus {
+  background-color: rgba(128, 128, 128, 0.2);
+  border-radius: 1em;
 }
 
 .gradient-text-rk-rg {
@@ -463,11 +466,7 @@
       transform: rotate(359deg);
     }
   }
-
-  .use-links {
-    
-  }
-
+  
   /* --------------------- */
   /* |   Box animation   | */
   /* --------------------- */
