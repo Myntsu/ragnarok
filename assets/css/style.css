@@ -4,6 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
 
+:root {
+  --bg-red: #DC143C;
+  --text-white: white;
+  --text-shadow-black: .15em .15em 1px black;
+  --text-black: black;
+}
+
 * {
     box-sizing: border-box
 }
@@ -62,6 +69,137 @@
     background-color: #FAD0D1 !important;
   }
 
+  .guides-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+  .text-orange {
+    color: orange;
+  }
+
+.img-classes {
+    position: relative;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    width: 80%;
+    height: 80%;
+
+    aspect-ratio: 1;
+
+    object-fit: none;
+    object-position: 50% 20%;
+
+    margin: 1em;
+}
+
+.fancy-link {
+    background-image: 
+        linear-gradient(90deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    
+    transition: background-size ease 300ms;
+}
+
+.fancy-link:hover {
+    background-size: 100% 3px;
+    font-weight: 700;
+}
+
+.fancy-link:focus {
+    background-size: 100% 3px;
+    font-weight: 700;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.description-hover:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 1em;
+}
+
+.gradient-text-rk-rg {
+    background-image: 
+        linear-gradient(180deg,#DC143C 10%, #c46060);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-wl-sorc {
+    background-image: 
+        linear-gradient(180deg,#4169E1 10%, rgb(123, 123, 200));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-ranger-mins {
+    background-image: 
+        linear-gradient(180deg,#ff8000 50%, #FFF8DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-mech-gen {
+    background-image: 
+        linear-gradient(180deg,#2F4F4F 10%, #808080);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-gx-sc {
+    background-image: 
+        linear-gradient(180deg,#483D8B 10%, #7B68EE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-ab-sura {
+    background-image: 
+        linear-gradient(180deg,#90c527 10%, #a4c7ae);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-kage-rebe {
+    background-image: 
+        linear-gradient(180deg,#4682B4 30%, #a6b8c6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-summ-sn {
+    background-image: 
+        linear-gradient(180deg,#800000 10%, #b78b8b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-text-sr-se {
+    background-image: 
+        linear-gradient(180deg,black 10%, rgb(130, 130, 130));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
   /* -------------------- */
   /* |   Nav tab/link   | */

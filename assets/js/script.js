@@ -1,3 +1,5 @@
+
+
 // -----------------
 // Enabling popover
 // -----------------
@@ -11,6 +13,13 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+// ------------------
+// Enabling collapse
+// ------------------
+
+const collapseElementList = document.querySelectorAll('.collapse')
+const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
 
 // ===== Document ready =====
 $(document).ready(function() {
@@ -103,5 +112,4 @@ $(document).ready(function() {
         e.preventDefault();
     });
   }); 
-
 });

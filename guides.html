@@ -34,7 +34,7 @@
     <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
     <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/3938089_attack_skill_sword_icon_black_128px.png">
 </head>
-<body data-bs-spy="scroll" class="position-relative">
+<body class="position-relative">
 
   <!-- Navigation bar -->
   <nav id="navegation" class="navbar navbar-expand-lg text-white mont-alt-300-14 px-3 py-2 sticky-top border-bottom border-white border-2">
@@ -68,214 +68,793 @@
   <!-- /// End of Navigation bar -->
 
   <!-- Main -->
-  <main data-router-wrapper>
-  <section data-router-view="guides" class="home-content">
-  <!-- Tab guides list -->
-  <div id="tab-guides" class="container mt-4 position-relative"> <!--ID Guides tab-->
-      <ul class="nav col-12 justify-content-start mont-alt-300 tab me-auto text-center tabs py-3 border border-white rounded-1 border-3 bg-dark">
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#leinarth-card" id="" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-target="#author-rune-knight" type="button" role="tab" aria-controls="author-rune-knight" aria-selected="true" data-bs-toggle="tab"> <!--Rune Knight-->
-            <i class="fa-solid fa-dragon"></i><span> Rune Knight</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <button id="royal-guard-tab" class="btn btn-danger text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;" data-bs-toggle="tab" data-bs-target="#royal-guard" type="button" role="tab" aria-controls="royal-guard" aria-selected="true"> <!--Royal Guard-->
-            <i class="fa-solid fa-shield"></i><span> Royal Guard</span>
-          </button>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <img src="assets/img/chibis/wl_chibi.png" alt="">
-          <a href="#warlock" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Warlock-->
-            <i class="fa-solid fa-fire"></i><span> Warlock</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#sorcerer" class="btn btn-primary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sorcerer-->
-            <i class="fa-solid fa-book-bookmark"></i></i><span> Sorcerer</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#ranger" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Ranger-->
-            <i class="fa-solid fa-feather-pointed"></i><span> Ranger</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#mins-&-wandy" class="btn btn-warning text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Minstrel & Wanderer-->
-            <i class="fa-solid fa-music"></i><span> Minstrel & Wanderer</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#mechanic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Mechanic-->
-            <i class="fa-solid fa-wrench"></i><span> Mechanic</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#genetic" class="btn btn-secondary text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Genetic-->
-            <i class="fa-solid fa-flask-vial"></i></i><span> Genetic</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#guillotine-cross" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Guillotine Cross-->
-            <i class="fa-solid fa-skull-crossbones"></i><span> Guillotine Cross</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#shadow-chaser" class="btn btn-bd-purple text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Shadow Chaser-->
-            <i class="fa-solid fa-copy"></i></i><span> Shadow Chaser</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#arch-bishop" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Arch Bishop-->
-            <i class="fa-solid fa-book-bible"></i><span> Arch Bishop</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#sura" class="btn btn-success text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Sura-->
-            <i class="fa-solid fa-hand-fist"></i></i><span> Sura</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#kagerou-&-oboro" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Kagerou & Oboro-->
-            <i class="fa-solid fa-fan"></i><span> Kagerou & Oboro</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#rebellion" class="btn btn-light text-dark gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Rebellion-->
-            <i class="fa-solid fa-gun"></i><span> Rebellion</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#summoner" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Summoner-->
-            <i class="fa-solid fa-paw"></i><span> Summoner</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#super-novice" class="btn btn-info text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Super Novice-->
-            <i class="fa-solid fa-helmet-safety"></i><span> Super Novice</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#soul-reaper" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Soul Reaper-->
-            <i class="fa-solid fa-book-quran"></i><span> Soul Reaper</span>
-          </a>
-        </li>
-        <li class="nav-item col-12 col-md-6 col-lg-3 my-2" role="presentation">
-          <a href="#star-emperor" class="btn btn-outline-light text-white gradient-border-animation btn-shadow-white" style="min-width: 220px;"> <!--Star Emperor-->
-            <i class="fa-solid fa-moon"></i><span> Star Emperor</span>
-          </a>
-        </li>
-      </ul>
-  </div>
-  <!-- ///End of Tab guides list -->
+  <main>
+    <section class="container my-5 bg-white shadow border rounded text-dark">
 
-  <!-- Authors list -->
-  <div id="author-rune-knight" class="container my-5 tab-pane fade" role="tabpanel" data-bs-target="#tab-guides" data-bs-offset="0" tabindex="0" aria-labelledby="rune-knight-tab">
-      <div class="d-flex flex-wrap justify-content-evenly">
-              <!-- Leinarth card -->
-              <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
-                <div class="row g-0 position-relative">
-                  <div class="col-md-4">
-                    <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body row text-white">
-                        <div class="d-flex justify-content-start align-items-baseline">
-                            <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
-                            <div class="d-flex justify-content-start align-items-center ms-2">
-                              <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                            </div>
-                            <div class="d-flex ms-auto me-2">
-                              <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                Launch
-                              </a>
-                            </div>
-                        </div>
-                      <hr class="ms-3 w-50 my-md-2">
-                      <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
-                      <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
-                        <div class="d-flex btn-group ms-2 position-relative dropdown">
-                        <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
-                        </button>
-                        <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                        </button>
-                            <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
-                            <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            </ul>
-                        </div>
-                      </span>
-                      <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
-                        Launch
-                      </a>
-                      
-                      <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                        <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <!-- Row -->
+      <div class="row my-2">
 
-              <!-- Myndi card -->
-              <div class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
-                <div class="row g-0 position-relative">
-                  <div class="col-md-4">
-                    <img src="assets/img/illustration/myndi__smytsu_profile.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body row text-white">
-                        <div class="d-flex justify-content-start align-items-baseline">
-                            <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
-                            <div class="d-flex justify-content-start align-items-center ms-2">
-                              <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
-                            </div>
-                            <div class="d-flex ms-auto me-2">
-                              <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
-                                Launch
-                              </a>
-                            </div>
-                        </div>
-                      <hr class="ms-3 w-50 my-md-2">
-                      <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> Not updated yet</span>
-                      <span class="d-none d-md-flex fw-light my-1 small"><span class="badge text-bg-danger border rounded text-start">Work in progress</span> 
-                        <div class="d-flex btn-group ms-2 position-relative dropdown">
-                        <button id="drop-myndi" class="btn btn-light mont-300-12 btn-sm text-end position-relative rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="small position-absolute top-50 start-50 translate-middle fw-bold" style="left: 23px !important;"> Toggle </span>
-                        </button>
-                        <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
-                        </button>
-                            <ul class="dropdown-menu" aria-labelledby="drop-myndi"> <!-- Content WIP fw-bold // primary for check -->
-                            <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
-                            </ul>
-                        </div>
-                      </span>
-                      <a href="/" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
-                        Launch
-                      </a>
-                      
-                      <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
-                        <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
-                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
-                        <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+          <!-- RK -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/0/0e/Bt_rk.png" alt="" class="img-classes">
                       </div>
-                    </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
                   </div>
-                </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-rk-rg">
+                          <i class="fa-solid fa-dragon me-2"></i> Rune Knight
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                             Having mastered the arts of swordsmanship, Rune Knights sought for more power. Though they are incapable to harness magical powers within their body, they manage to use them by the help of medium called runes. Aside from runes in their arsenal, they possess powerful close combat capabilities while riding their trustworthy dragon to battle.
+                          </p>
+                      </div>
+                  </div>
               </div>
+          </div>
+
+          <!-- Authors RK -->
+          <section class="guides-active collapsing" id="author-rk">
+              <div class="d-flex ps-3">
+                  <h1 class="mont-300-14 fs-3">Rune Knight</h1>
+              </div>
+              <div class="d-flex flex-wrap justify-content-evenly" >
+                  <!-- Leinarth card -->
+                  <div id="leinarth-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                      <div class="row g-0 position-relative">
+                          <div class="col-md-4">
+                          <img src="https://www.novaragnarok.com/wiki/images/thumb/1/13/Leinarth.png/566px-Leinarth.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
+                          </div>
+                          <div class="col-md-8">
+                          <div class="card-body row text-white">
+                              <div class="d-flex justify-content-start align-items-baseline">
+                                  <span class="card-title fw-light fs-4">Leinarth</span> <!-- Author -->
+                                  <div class="d-flex justify-content-start align-items-center ms-2">
+                                      <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                                  </div>
+                                  <div class="d-flex ms-auto me-2">
+                                      <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                      Launch
+                                      </a>
+                                  </div>
+                              </div>
+                              <hr class="ms-3 w-50 my-md-2">
+                              <span class="d-inline fw-light my-1 small"><span class="badge text-bg-primary border rounded me-1" >Last update</span> 01 / July / 2022</span>
+                              <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge border rounded text-start">Work in progress</span> 
+                              <div class="d-flex btn-group ms-2 position-relative dropdown">
+                              <button id="drop-leinarth" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
+                              </button>
+                              <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                              </button>
+                                  <ul class="dropdown-menu" aria-labelledby="drop-leinarth"> <!-- Content WIP fw-bold // primary for check -->
+                                  <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12 text-primary fw-bold">Auto-Attack Build <i class="fa-solid fa-check ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Ignition Break Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Spiral Pierce Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Sonic Wave Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  <li><span class="dropdown-item mont-300-12">Dragon Breath Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                                  </ul>
+                              </div>
+                              </span>
+                              <a href="leinarth.html" role="button" class="d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                              Guide
+                              </a>
+                              
+                              <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                              <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                              <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                              <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+                  </div>
+              
+                  <!-- Myndi card -->
+                  <div id="myndi-card" class="card mb-3 mont-300-14 bg-dark rounded-bottom" style="max-width: 540px;">
+                  <div class="row g-0 position-relative">
+                      <div class="col-md-4">
+                      <img src="assets/img/illustration/myndi__smytsu_profile.png" class="rounded-bottom" style="width: 100%; height: auto;"> <!-- Image -->
+                      </div>
+                      <div class="col-md-8">
+                      <div class="card-body row text-white">
+                          <div class="d-flex justify-content-start align-items-baseline">
+                              <span class="card-title fw-light fs-4">Myndi</span> <!-- Author -->
+                              <div class="d-flex justify-content-start align-items-center ms-2">
+                                  <span class=" fw-bold" style="color: #679ffc;"> <span class="me-1">Verified author</span> <i class="fa-solid fa-circle-check"></i></span>
+                              </div>
+                              <div class="d-flex ms-auto me-2">
+                                  <a href="leinarth.html" role="button" class="d-sm-flex d-md-none btn btn-sm btn-light text-dark rounded-pill mont-300-12 fw-bold justify-content-center align-items-center" style="width: 70px;">
+                                  Launch
+                                  </a>
+                              </div>
+                          </div>
+                          <hr class="ms-3 w-50 my-md-2">
+                          <span class="d-inline fw-light my-1 small"><span class="badge border rounded me-1 bg-primary">Last update</span> Not updated yet</span>
+                          <span class="d-none d-md-flex fw-light my-1 small align-items-center"><span class="badge bg-dark border rounded text-start">Work in progress</span> 
+                          <div class="d-flex btn-group ms-2 position-relative dropdown">
+                          <button id="drop-myndi" class="btn btn-light mont-300-12 btn-sm text-end rounded-start" style="width: 45px; height: 20px;" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="small position-absolute top-50 start-50 translate-middle fw-bold"> Check </span>
+                          </button>
+                          <button type="button" class="btn btn-light mont-300-12 btn-sm dropdown-toggle dropdown-toggle-split rounded-end" data-bs-toggle="dropdown" aria-expanded="false" style="width: 18px; height: 20px;">
+                          </button>
+                              <ul class="dropdown-menu" aria-labelledby="drop-myndi"> <!-- Content WIP fw-bold // primary for check -->
+                              <li><span class="dropdown-item mont-300-12">Introduction <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                              <li><span class="dropdown-item mont-300-12">Overview <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                              <li><span class="dropdown-item mont-300-12">Extras <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                              <li><span class="dropdown-item mont-300-12">Wind Cutter Build <i class="fa-solid fa-xmark ms-1"></i></span></li>
+                              </ul>
+                          </div>
+                          </span>
+                          <a href="/" role="button" class="disabled d-none d-md-inline btn btn-sm btn-light text-dark rounded-pill mont-300-12 position-absolute fw-bold gradient-border-animation btn-shadow-white" style="width: 70px; top: 102px; left: 444px; z-index: 3;">
+                          Guide
+                          </a>
+                          
+                          <div class="d-flex justify-content-end align-items-baseline position-absolute bottom-0 end-0 text-white mb-3 mb-md-0">
+                          <p class="d-none d-md-inline mx-2 small">Not available right now <i class="fa-solid fa-angles-right fa-xs"></i></p>
+                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Like this author" style="width: 40px;"><i class="fa-solid fa-thumbs-up fa-md p-1"></i></button>
+                          <button class="btn btn-sm border rounded-pill border-white mx-1 text-white badge-in-black" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bookmark this author" style="width: 40px;"><i class="fa-solid fa-bookmark fa-md p-1"></i></button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+              </div>
+          </section>
+          
+          <!-- RG -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-rk-rg">
+                          <span>Royal Guard </span> <i class="fa-solid fa-shield ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              Utilizing the formerly forgotten arts of King Schmitz's elite combat unit, Royal Guards destroy enemies with powerfully enhanced spear and shield skills, while still being a stalwart defender for their allies. Their spear skills can flatten hordes of enemies; their defensive spells make them tough to cut down, and their signature skill Devotion allows them to absorb damage from their party mates to keep them alive.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/5/51/Bt_rg.png" alt="" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- WL -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/f/fa/Bt_wl.png" alt="" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-wl-sorc">
+                          <i class="fa-solid fa-fire me-2"></i><span> Warlock</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              Upon travelling to the New World, the Wizards of Rune-Midgarts discovered the ancient magic of Jotunheim's Frost Giants. The new practitioners dubbed themselves Warlocks, and their mastery of the elements allowed them to freeze and petrify swarms of enemies all at once. They could also combine the elements however they please into an explosive Tetra Vortex.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Sorc -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-wl-sorc">
+                          <span>Sorcerer </span> <i class="fa-solid fa-book-bookmark ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              Through long and hard research, the Sorcerers discovered new area magic spells and the Fairy Communication System, a method to call elemental spirits from another plane. Their powerful Psychic Wave can be endowed by the element of their summoned spirit. Sorcerers can also support allies and hinder opponents with elemental Insignias placed on the ground.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/7/74/Bt_sorc.png" alt="Sorcerer job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Ranger -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/3/32/Bt_rang.png" alt="Ranger job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-ranger-mins">
+                          <i class="fa-solid fa-feather-pointed me-2"></i><span> Ranger</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              Emerging from the depths of a hidden forest, the Rangers employ a deadly combination of stealth, traps and archery to defeat their foes. They can protect themselves with Camouflage, before suddenly appearing and wiping out enemies from a distance. Their attunement with the wilderness allowed them to befriend the mighty Warg, a wolf like creature who can detect traps, attack enemies and even give the Ranger a ride.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Mins & Wandy -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-ranger-mins">
+                          <span>Minstrel & Wanderer </span> <i class="fa-solid fa-music ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              The eternally travelling, free-spirited performers are always a sight to see, bestowing great support to allies and nightmarish effects to enemies through the power of music. The Wanderer's Swing Dance improves the movement and attack speed of friends, while the Minstrel's Windmill Rush encourages them to hit harder. Against foes, their weapons of choice are the terrifying discord of Metallic Sound and a Severe Rainstorm of arrows.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/1/10/Bt_minwan.png" alt="Minstrel and Waderer jobs" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Mech -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/0/00/Bt_mech.png" alt="Mechanic job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-mech-gen">
+                          <i class="fa-solid fa-wrench me-2"></i><span> Mechanic</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              A Schwarzwald researcher fused magic with lost technology and created the Madogears, robotic suits that are piloted by the Mechanics. With the Madogear, Mechanics can move quickly, shield allies with cloaking and barriers or smash an opponent with rocket fists. But make no mistake; even without the Madogear, Mechanics are masters of the axe, and can cleave apart enemies with Axe Boomerang and Axe Tornado.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Gen -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-mech-gen">
+                          <span>Genetic </span> <i class="fa-solid fa-flask-vial ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              The Geneticists are devoted to the properties of transformation by utilizing the new and unknown biological materials. They mutated their Homunculus companions into Homunculus S, which have additional skills and greater capabilities. Their plant-based attacks include Crazy Weed, which creates vines that destroy field effects, and Howling of Mandragora, which increases the cast time of those who hear the horrifying wail.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/f/f4/Bt_gene.png" alt="Genetic job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- GX -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/d/df/Bt_gx.png" alt="Guillotine Cross job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-gx-sc">
+                          <i class="fa-solid fa-skull-crossbones me-2"></i><span> Guillotine Cross</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              The society of Guillotine Crosses was a secret amongst secrets, the hidden executioners of the Assassin's Guild. Moving under the stealth of Cloaking Exceed, they can clear out waves of enemies using Rolling Cutter. If one enemy dares try to escape, Guillotine Crosses can finish them at a distance with Cross Ripper Slasher. Their knowledge of poisons has expanded well over those of the Assassin Cross, allowing them to cause a variety of debilitating effects that only they have the antidote for.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- SC -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-gx-sc">
+                          <span>Shadow Chaser </span> <i class="fa-solid fa-copy ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              Influenced by ancient murals and artworks, the newly formed Shadow Chasers can infuse magic into paintings that become reality and stir distressing feelings in their adversaries. Their Masquerade skills can incapacitate their unfortunate foes, causing Ignorance that prevents skill usage, or Weakness in their arms where they can no longer hold weapons. Their paintings can even become dangerous ground traps that hold and confuse foes.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/b/bc/Bt_shadowc.png" alt="Shadow Chaser job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- AB -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/4/40/Bt_abishop.png" alt="Arch Bishop job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-ab-sura">
+                          <i class="fa-solid fa-book-bible me-2"></i><span> Arch Bishop</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              By the light of the Holy Grail, the faith of the Arch Bishops shall prevail over all! Their healing, buffs and status removal spells can target an entire party at once, making them invaluable to every party. Unlike their predecesors, their Holy magics are not limited to Demon and Undead enemies, as Arch Bishops can smite down all wicked adversaries with the might of their Holy attacks, Judex and Adoramus.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Sura -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-ab-sura">
+                          <span>Sura </span> <i class="fa-solid fa-hand-fist ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              The Sura's highly honed combat abilities can beat down any who stand before them. Their tougher bodies can hold a larger number of Spirit Spheres via Rising Dragon, which they utilize in speedy Flash Combos. They can end combos with the ferocious Tiger Cannon area attack, or the ranged barrage of Gates of Hell. Also, Suras are masters of the Gentle Touch, pressure point techniques which can assist in battle many different ways.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/4/41/Bt_sura.png" alt="Sura job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Kage & Oboro -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/1/19/Bt_ninja.png" alt="Kagerou and Oboro jobs" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-kage-rebe">
+                          <i class="fa-solid fa-fan me-2"></i><span> Kagerou & Oboro</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              Once thought of as fairy tales, the elite sect of the Amatsu Ninjas have finally reappeared in the world, bringing their unique brand of deadly techniques. They utilize Illusion skills that cause status ailments, elemental Charms that increase the damage of specific properties, and stronger kunai, Huuma Shuriken and Zeny throwing skills. Kagerous have specific skills around shadows, such as Shadow Warrior, which grants Double Attack to an ally. Oboros instead use moon-based spells that can increase or decrease stats
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Rebel -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-kage-rebe">
+                          <span>Rebellion </span> <i class="fa-solid fa-gun ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              When the Rekenber Rebellion was quashed, the survivors went into hiding at Einbroch. There they built funds in secret, equipping themselves with a variety of firearms and preparing their skills for the next uprising. Locking onto targets with Crimson Marker, they can barrage enemies with the Pistol's Quick Draw Shot, blast them with the Rifle's Hammer of God or blow them to pieces using the Grenade Launcher's Dragon Tail missile.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/9/98/Bt_rebel.png" alt="Rebellion job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Summ -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/9/9b/Bt_summoner.png" alt="Rat" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-summ-sn">
+                          <i class="fa-solid fa-paw me-2"></i><span> Summoner</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              Doram Summoners are linked to nature, bestowing upon them the power of the sea, land and life. The Summoner can call the shrimp and tuna of the oceans to help restore health and protect themselves and their allies. The earth's Silvervines and Catnip are at their disposal, letting them Root Twist enemies in place and striking them with magical Stem Spears and Meteors. Even the wild's bugs, birds and mammals will help augment physical abilities and strike down any target the Summoner chooses.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- SN -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-summ-sn">
+                          <span>Super Novice </span> <i class="fa-solid fa-helmet-safety ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              The Super Novices strive for what they call "exemplary mediocrity", a concept that may well be completely foreign to the other jobs. Rather than being the ultimate hero, they instead aim to be the ultimate ordinary person, believing that leading a normal life lets them better assist the common person. By learning a little from everyone they meet, they gained the skills of many early classes, but excel at absolutely nothing and can perform no advanced techniques.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/7/70/Bt_supernov.png" alt="Super Novice job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- SR -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+                  
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/7/71/Bt_soulreap.png" alt="Soul Reaper job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-regular fa-star"></i> <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="#author-rk" role="button" aria-expanded="false" aria-controls="author-rk">
+                              Authors <i class="fa-solid fa-angles-right fa-xs ps-1"></i>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-start fs-5 gradient-text-sr-se">
+                          <i class="fa-solid fa-book-quran me-2"></i><span> Soul Reaper</span>
+                      </div>
+                      <hr class="w-75 my-2 ms-2">
+                      <div class="d-flex">
+                          <p class="guides-text guides-active hide" style="text-align: justify;">
+                              By researching in Nifleheim, the realm of the dead, the Soul Reapers discovered a unique power they dubbed Soul Energy. Harvesting the energy when attacking their foes, they could use it to link powerful new souls to allies which are unrestricted by job class. Soul Reapers can also curse groups of enemies and then blow them apart with their Curse Explosion, or deliver powerful endowable magic attacks with Espa and Eswhoo.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- SE -->
+          <div class="col-12 col-lg-6">
+              <div class="d-flex description-hover">
+
+                  <!-- Class + Description -->
+                  <div class="w-60 p-2">
+                      <div class="d-flex mont-300-14 fw-bold align-items-baseline justify-content-end fs-5 gradient-text-sr-se">
+                          <span>Star Emperor </span> <i class="fa-solid fa-moon ms-2"></i>
+                      </div>
+                      <hr class="w-75 my-2 ms-auto me-2">
+                      <div class="d-flex">
+                          <p class="guides-text" style="text-align: justify;">
+                              Through copious study of the celestial bodies, the enlightened Star Emperors developed stances that could draw in the awesome power of the cosmos. They can utilize the sun's explosive Solar Burst to devastate scores of foes, the moon's mysterious energy with their New Moon Kick to mask their presence, and the limitless stars to rain countless blows upon their enemies. At their peak, Star Emperors can use the Stance of the Universe to unlock powerful player combat skills.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- Image + Difficulty -->
+                  <div class="w-40 p-2">
+                      <div class="d-flex justify-content-center">
+                          <img src="https://www.novaragnarok.com/wiki/images/c/c8/Bt_staremp.png" alt="Star Emperor job" class="img-classes">
+                      </div>
+                      <div class="d-flex justify-content-center roboto-300-14 text-uppercase fw-bold" style="letter-spacing: 1px;">
+                          Difficulty
+                      </div>
+                      <div class="d-flex justify-content-center text-orange">
+                          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                      </div>
+                      <div class="d-flex justify-content-center  mt-2 mont-alt-300-14 disabled">
+                          <a class="d-flex align-items-baseline text-decoration-none text-dark fancy-link" data-bs-toggle="collapse" href="-" role="button" aria-expanded="false" aria-controls="author-rk">
+                              <i class="fa-solid fa-angles-left fa-xs pe-1"></i> Authors 
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
       </div>
-  </div>
   </section>
   </main>
     
