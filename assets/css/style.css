@@ -83,9 +83,6 @@
     border: 2px solid white;
     border-radius: 50%;
 
-
-
-
     aspect-ratio: 1;
 
     object-fit: none;
@@ -423,6 +420,7 @@
     height: 48px;
     opacity: 0.7 !important;
     transition: all 0.3s ease-in-out;
+    z-index: 100;
   }
 
   #btn-back-to-top:hover {
@@ -466,6 +464,34 @@
       transform: rotate(359deg);
     }
   }
+
+  .home-mobile-btn {
+    display: inline;
+    padding: .3em;
+    margin: .5em auto 1em;
+
+    width: clamp(6em, 6em - 0.25vmin, 7em);
+    
+    border: .15em solid white;
+    border-radius: 1em;
+
+    text-decoration: none;
+    color: white;
+    font-size: .9rem !important;
+  }
+
+  .home-mobile-btn:hover {
+    color: #202429;
+    background-color: white;
+  }
+
+  .home-mobile-btn:active {
+    background-color: #202429;
+    color: white;
+    background-image: 
+      linear-gradient(180deg, #202429 40%, white);
+    box-shadow: 0 0 0 .25em grey;
+  }
   
   /* --------------------- */
   /* |   Box animation   | */
@@ -494,6 +520,10 @@
     background-position: 0 50%;
     border-radius: 5px;
     animation: moveGradient 4s alternate infinite;
+  }
+
+  .shadow-box-in {
+    /* box-shadow: inset 0 0 5px 5px white; */
   }
 
   /* ------------------------ */
